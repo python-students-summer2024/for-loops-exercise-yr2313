@@ -13,7 +13,7 @@ def calculate_infections(starting_number_infections, reproduction_rate, num_days
   You must use a for loop to progressively calculate the number of infections each day until the target number of days is reached.
 
   :param starting_number_infections: The number of infected individuals to begin with.
-  :param reproduction_rate: A floating point number indicating how many people each one infected person will infect each day.
+  :param reproduction_rate: A floating point number indicating the rate of growth in the number of infections each day.
   :returns: The new number of infected individuals after the given number of days, rounded to the nearest integer.
   """
   
