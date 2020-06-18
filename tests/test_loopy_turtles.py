@@ -27,6 +27,7 @@ class Tests:
     # mock the print_turtle_position functions
     mock_functions['t.forward'] = get_mock_function(mock_data, 't.forward')
     monkeypatch.setattr(t, 'forward', lambda *args: mock_functions['t.forward']('t.forward', args))
+    monkeypatch.setattr(t, 'fd', lambda *args: mock_functions['t.forward']('t.forward', args))
 
     mock_functions['t.right'] = get_mock_function(mock_data, 't.right')
     monkeypatch.setattr(t, 'right', lambda *args: mock_functions['t.right']('t.right', args))
@@ -91,6 +92,7 @@ class Tests:
     # mock the print_turtle_position functions
     mock_functions['t.forward'] = get_mock_function(mock_data, 't.forward')
     monkeypatch.setattr(t, 'forward', lambda *args: mock_functions['t.forward']('t.forward', args))
+    monkeypatch.setattr(t, 'fd', lambda *args: mock_functions['t.forward']('t.forward', args))
 
     mock_functions['t.right'] = get_mock_function(mock_data, 't.right')
     monkeypatch.setattr(t, 'right', lambda *args: mock_functions['t.right']('t.right', args))
@@ -155,6 +157,7 @@ class Tests:
     # mock the print_turtle_position functions
     mock_functions['t.forward'] = get_mock_function(mock_data, 't.forward')
     monkeypatch.setattr(t, 'forward', lambda *args: mock_functions['t.forward']('t.forward', args))
+    monkeypatch.setattr(t, 'fd', lambda *args: mock_functions['t.forward']('t.forward', args))
 
     mock_functions['t.right'] = get_mock_function(mock_data, 't.right')
     monkeypatch.setattr(t, 'right', lambda *args: mock_functions['t.right']('t.right', args))
@@ -221,6 +224,7 @@ class Tests:
     # mock the print_turtle_position functions
     mock_functions['t.forward'] = get_mock_function(mock_data, 't.forward')
     monkeypatch.setattr(t, 'forward', lambda *args: mock_functions['t.forward']('t.forward', args))
+    monkeypatch.setattr(t, 'fd', lambda *args: mock_functions['t.forward']('t.forward', args))
 
     mock_functions['t.right'] = get_mock_function(mock_data, 't.right')
     monkeypatch.setattr(t, 'right', lambda *args: mock_functions['t.right']('t.right', args))
