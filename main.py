@@ -24,12 +24,12 @@ else:
 
 
 # #### FOR LOOPING TURTLES ####
-# draw four overlapping squares, and then a pentagon
-from loopy_turtles import create_turtle, draw_square, draw_pentagon
+# draw four overlapping squares, and then a five-pointed star
+from loopy_turtles import create_turtle, draw_square, draw_star
 t = create_turtle('red', 'yellow') # create a turtle object
 for x in range(-200, 0, 25): # loop four times
   draw_square(t, x, x, 100, 'left', '#F5DEB3') # draw a square
 
-draw_pentagon(t, 200, 200, 100, 120, 'right', 'red') # draw a pentagon
+draw_star(t, 200, 200, 100, 120, 'right', 'red') # draw a five-pointed star
 
 

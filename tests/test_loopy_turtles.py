@@ -134,12 +134,12 @@ class Tests:
     assert mock_data['t.begin_fill']['call_counter'] == 1
     assert mock_data['t.end_fill']['call_counter'] == 1
 
-  def test_draw_pentagon_turning_left(self, monkeypatch):
+  def test_draw_star_turning_left(self, monkeypatch):
     """
-    Test that the pentagon is drawn correctly by the turtle, first turning left
+    Test that the five-pointed star is drawn correctly by the turtle, first turning left
     """
     # set up debug logging
-    # log = logging.getLogger('test_draw_pentagon_turning_left')
+    # log = logging.getLogger('test_draw_star_turning_left')
 
     t = loopy_turtles.create_turtle('red', 'yellow') # create a turtle object
 
@@ -180,7 +180,7 @@ class Tests:
     length = 50
     direction = 'left'
     angle = 90
-    loopy_turtles.draw_pentagon(t, x, y, length, angle, direction, 'red') # draw a pentagon
+    loopy_turtles.draw_star(t, x, y, length, angle, direction, 'red') # draw a five-pointed star
 
     # assert truths
     assert mock_data['loopy_turtles.pick_up_and_move_turtle']['call_counter'] == 1
@@ -201,12 +201,12 @@ class Tests:
     assert mock_data['t.begin_fill']['call_counter'] == 1
     assert mock_data['t.end_fill']['call_counter'] == 1
 
-  def test_draw_pentagon_turning_right(self, monkeypatch):
+  def test_draw_star_turning_right(self, monkeypatch):
     """
     Test that the square is drawn correctly by the turtle.
     """
     # set up debug logging
-    # log = logging.getLogger('test_draw_pentagon_turning_left')
+    # log = logging.getLogger('test_draw_star_turning_right')
 
     t = loopy_turtles.create_turtle('red', 'yellow') # create a turtle object
 
@@ -247,7 +247,7 @@ class Tests:
     length = 200
     direction = 'right'
     angle = 120
-    loopy_turtles.draw_pentagon(t, x, y, length, angle, direction, 'red') # draw a pentagon
+    loopy_turtles.draw_star(t, x, y, length, angle, direction, 'red') # draw a five-pointed star
 
     # assert truths
     assert mock_data['loopy_turtles.pick_up_and_move_turtle']['call_counter'] == 1
