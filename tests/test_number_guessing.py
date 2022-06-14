@@ -42,9 +42,9 @@ class Tests:
     for i in range(num_calls):
       expected = mock_data['expected'][i]
       actual = guess_number(1, 100, mock_data['num_attempts'][i])
-      assert actual == expected
+      assert actual == expected, f'Expected guess_number to return {expected} with test data; instead, it returned {actual}'
 
     # check that each function was called the correct number of times
-    assert call_counter['input'] == expected_input_calls
-    assert call_counter['randint'] == expected_randint_calls
+    assert call_counter['input'] == expected_input_calls, f'Expected the input function to be called {expected_input_calls} times; instead, it was called {call_counter["input"]} times'
+    assert call_counter['randint'] == expected_randint_calls, f'Expected the randint function to be called {expected_randint_calls} times; instead, it was called {call_counter["randint"]} times'
   
