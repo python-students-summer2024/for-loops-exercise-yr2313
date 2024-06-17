@@ -31,8 +31,8 @@ else:
     print("Sorry, all your guesses were incorrect!")  # they guessed incorrectly!
 
 
-# #### FOR LOOPING TURTLES ####
-# draw four overlapping squares, and then a five-pointed star
+#### FOR LOOPING TURTLES ####
+draw four overlapping squares, and then a five-pointed star
 from loopy_turtles import create_turtle, draw_square, draw_star
 
 t = create_turtle("red", "yellow")  # create a turtle object
